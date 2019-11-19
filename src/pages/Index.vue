@@ -44,6 +44,16 @@ query {
 }
 </page-query>
 
+<static-query>
+query {
+  metadata {
+    siteName
+    siteDescription
+    siteUrl
+  }
+}
+</static-query>
+
 <script>
 import Author from '@/components/Author'
 import Connect from '@/components/Connect'
@@ -59,18 +69,32 @@ export default {
     return {
       title: this.$static.metadata.siteName,
       titleTemplate: '',
+      meta: [
+        {
+          property: "og:title",
+          content: this.$static.metadata.siteName
+        },
+        {
+          property: "og:description",
+          cotent: this.$static.metadata.siteDescription
+        },
+        {
+          property: 'og:image',
+          content: this.$static.metadata.siteUrl + '/og.png',
+        },
+        {
+          property: 'og:image:width',
+          content: '124'
+        },
+        {
+          property: 'og:image:height',
+          content: '124'
+        },
+      ]
     }
   },
 }
 </script>
-
-<static-query>
-query {
-  metadata {
-    siteName
-  }
-}
-</static-query>
 
 <style lang="scss" scoped>
 .content {
