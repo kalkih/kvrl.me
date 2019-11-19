@@ -1,0 +1,42 @@
+html {
+  --red: #ee5253;
+  --red: hsl(360, 75%, 63%);
+  --blue: #0abde3; //#54a0ff
+  --orange: #ff9f43;
+  --green: #10ac84;
+  --pink: #f368e0;
+  --purple: #5f27cd;
+
+  --base-font-size: 20px;
+  --space: 3.5rem;
+  --content-width: 1080px;
+  --radius: 5px;
+
+  // DARK THEME
+  // --bg: #1A1A1B;
+  // --bg: #14202A;
+  // --bg-code: rgba(255,255,255,.3);
+  // --border-color:  rgba(0,0,0,.1);
+  // --body-color: #ced8de;
+  // --font-color: #fff;
+  // --title-color: var(--font-color);
+
+  --bg: #ededed;
+  --bg-code: rgba(0,0,0,.3);
+  --border-color:  rgba(255,255,255,.1);
+  --body-color: #606060;
+  --font-color: rgb(79, 79, 79);
+  --title-color: var(--font-color);
+
+  --link-color: var(--red);
+  --link-color-hover: #9a9a9a;
+}
+
+@media screen and (max-width: 650px) {
+	html {
+		--base-font-size: 17px;
+	}
+	body {
+		--space: 1.5rem;
+	}
+}
