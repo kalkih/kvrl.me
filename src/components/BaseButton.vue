@@ -77,5 +77,10 @@ export default {
 			}
 		}
 	}
+
+  &.--alt {
+		border: 0;
+    padding: calc(.6em + 2px) calc(1em + 2px);
+  }
 }
 </style>

@@ -26,7 +26,7 @@
         <BaseButton v-if="feature.live_url" link :href="feature.live_url" class="--accent">
           <span>Open app</span>
         </BaseButton>
-        <BaseButton v-if="feature.github_url" link :href="feature.github_url">
+        <BaseButton v-if="feature.github_url" link :href="feature.github_url" class="--alt">
           <span>View source</span>
         </BaseButton>
       </div>
