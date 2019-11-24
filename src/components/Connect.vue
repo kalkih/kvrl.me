@@ -12,7 +12,7 @@
 
 <static-query>
 query {
-  socials: allSocial {
+  socials: allSocial(order: ASC) {
     edges {
       node {
 				link,
