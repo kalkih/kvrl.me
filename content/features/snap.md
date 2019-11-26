@@ -12,6 +12,6 @@ feature_images: [
 mobile_images: [
   './images/snap-mobile.png',
 ]
-description: "Twelve geofilters for Snapchat with a total of 165M+ accumulated views. Filters include unique designs for some larger Swedish citiies such as Stockholm, Gothenburg & Linköping, all filters uniquely designed with the geographic location in mind."
-dev_description: "All filters were designed in Adobe Illustrator in vector format, all design is original."
+description: "Twelve geofilters for Snapchat with a total of 165M+ accumulated views. Filters include unique designs for some larger Swedish cities such as Stockholm, Gothenburg & Linköping, all filters uniquely designed with the geographic location in mind."
+dev_description: "All filters were designed in Adobe Illustrator in vector format, all designs are original."
 ---
