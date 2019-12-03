@@ -25,9 +25,20 @@ export default {
 </script>
 
 <style lang="scss">
+#app {
+  animation: reveal .5s;
+}
 main {
   margin: 0 auto;
   padding: 1.5vw 0 0;
   scroll-behavior: smooth;
+}
+@keyframes reveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 </style>
