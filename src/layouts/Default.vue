@@ -30,7 +30,6 @@ export default {
 }
 main {
   margin: 0 auto;
-  padding: 1.5vw 0 0;
   scroll-behavior: smooth;
 }
 @keyframes reveal {
