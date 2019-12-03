@@ -56,16 +56,16 @@ export default {
 			}
 
 			circle {
-				animation: circle 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+				animation: circle .75s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
 				transform: scale(0);
 				fill: var(--link-color);
 			}
 			.line {
-				animation: line .75s .5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+				animation: line .75s .35s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
 				transform: scale(0);
 			}
 			.line-3 {
-				animation: line .75s .25s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+				animation: line .75s .15s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
 			}
 
 		}
