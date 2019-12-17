@@ -40,7 +40,7 @@ export default {
 	position: relative;
 	text-align: center;
 	text-decoration: none;
-	transition: opacity .25s;
+	transition: opacity .25s, color .25s;
 	user-select: none;
 
 	&:before {
@@ -57,7 +57,7 @@ export default {
 	}
 	
 	&:hover {
-		color: var(--bg);
+		color: var(--button-text-color);
 
 		&:before {
 			opacity: 1;
@@ -65,7 +65,7 @@ export default {
 	}
 	
 	&.--accent {
-		color: var(--bg);
+		color: var(--button-text-color);
 		&:before {
 			opacity: 1;
 		}
@@ -80,7 +80,14 @@ export default {
 
   &.--alt {
 		border: 0;
-    padding: calc(.6em + 2px) calc(1em + 2px);
+		padding: calc(.6em + 2px) calc(1em + 2px);
+
+		&:hover {
+			color: var(--font-color);
+			&:before {
+				opacity: 0;
+			}
+		}
   }
 }
 </style>

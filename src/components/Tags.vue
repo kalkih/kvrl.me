@@ -46,7 +46,7 @@ export default {
 		}
 		
 		&:hover {
-			color: var(--bg);
+			color: var(--button-text-color);
 
 			&:before {
 				opacity: 1;

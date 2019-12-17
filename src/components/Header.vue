@@ -35,11 +35,10 @@ export default {
 				animation: bounce 1s ease infinite forwards;
 
 				circle {
-					fill: var(--font-color);
+					fill: var(--logo-hover-color, var(--font-color));
+					stroke: #fff;
+					stroke-width: 10px;
 				}
-				// .line {
-				// 	stroke: var(--link-color);
-				// }
 			}
 		}
 

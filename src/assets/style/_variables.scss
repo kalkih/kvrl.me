@@ -1,4 +1,4 @@
-html {
+:root {
   --red: #ee5253;
   --red: hsl(360, 75%, 63%);
   --blue: #0abde3; //#54a0ff
@@ -12,15 +12,6 @@ html {
   --content-width: 1080px;
   --radius: 5px;
 
-  // DARK THEME
-  // --bg: #1A1A1B;
-  // --bg: #14202A;
-  // --bg-code: rgba(255,255,255,.3);
-  // --border-color:  rgba(0,0,0,.1);
-  // --body-color: #ced8de;
-  // --font-color: #fff;
-  // --title-color: var(--font-color);
-
   --bg: #ededed;
   --bg-code: rgba(0,0,0,.3);
   --border-color:  rgba(255,255,255,.1);
@@ -30,6 +21,21 @@ html {
 
   --link-color: var(--red);
   --link-color-hover: #9a9a9a;
+  --button-text-color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14202A;
+    --bg-code: rgba(255,255,255,.3);
+    --border-color:  rgba(0,0,0,.1);
+    --body-color: #e1e0e0;
+    --font-color: #eee;
+    --title-color: var(--font-color);
+    --link-color-hover: #fff;
+    --logo-hover-color: transparent;
+    --button-text-color: var(--font-color);
+  }
 }
 
 @media screen and (max-width: 650px) {
