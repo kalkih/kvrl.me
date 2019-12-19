@@ -3,8 +3,7 @@
     <div class="feature__images" v-in-viewport.once="{ margin: '-10% 0px' }" :style="rotation">
       <g-image v-for="(image, index) in feature.feature_images" :key="index"
         :alt="feature.title + '-preview-' + index"
-        :src="image.src"
-        :srcset="image.srcset"
+        :src="image"
       />
     </div>
     <div class="feature__info">
@@ -13,8 +12,7 @@
       <div class="feature__thumbs" v-in-viewport.once="{ margin: '-10% 0px' }">
         <g-image v-for="(image, index) in feature.mobile_images" :key="index"
           :alt="feature.title + '-mpreview-' + index"
-          :src="image.src"
-          :srcset="image.srcset"
+          :src="image"
         />
       </div>
       <div>
@@ -150,7 +148,7 @@ export default {
   &__thumbs {
     &.in-viewport {
       @for $i from 1 through 4 {
-        img:nth-child(#{$i}) {
+        img:nth-of-type(#{$i}) {
           opacity: 1;
           transition-delay: #{$i * .15}s;
           transform: translateY(0);
