@@ -23,11 +23,11 @@ query Tag ($id: ID!) {
             id
             title
             date (format: "D. MMMM YYYY")
-            timeToRead
             description
             dev_description
             path
             feature_images
+            mobile_images
             rotation
             live_url
             github_url
