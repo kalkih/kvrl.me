@@ -1,7 +1,7 @@
 module.exports = {
   siteUrl: "https://kvrl.me",
   siteName: 'Karl Kihlström',
-  siteDescription: 'Hello, my name is Karl, nice to meet you!',
+  siteDescription: 'Portfolio of Karl Kihlström.',
   icon: './src/assets/images/fav.png',
 
   templates: {
