@@ -132,16 +132,8 @@ export default {
 
   &__desc {
     font-weight: 500;
-    line-height: 1.75em;
-    font-size: 1em;
-
-    @media screen and (min-width: 650px) {
-      font-size: .8em;
-    }
-
-    @media screen and (min-width: 900px) {
-      font-size: 1em;
-    }
+    line-height: 1.5em;
+    font-size: .9em;
   }
 
   &__images,
