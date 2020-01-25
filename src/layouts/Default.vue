@@ -26,7 +26,7 @@ export default {
 
 <style lang="scss">
 #app {
-  animation: reveal .5s;
+  animation: reveal .25s;
 }
 main {
   margin: 0 auto;
