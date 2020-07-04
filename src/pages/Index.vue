@@ -33,6 +33,7 @@ query {
         rotation
         live_url
         github_url
+        play_store_url
         tags {
           id
           title

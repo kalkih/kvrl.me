@@ -8,7 +8,6 @@
     </div>
     <div class="feature__info">
       <h3 class="feature__title" v-html="feature.title" />
-
       <div class="feature__thumbs" v-in-viewport.once="{ margin: '-10% 0px' }">
         <g-image v-for="(image, index) in feature.mobile_images" :key="index"
           :alt="feature.title + '-mpreview-' + index"
@@ -21,8 +20,11 @@
         <Tags class="feature__tags" :feature="feature" />
       </div>
       <div v-if="showButtons" class="feature__buttons">
+        <BaseButton v-if="feature.play_store_url" link :href="feature.play_store_url" class="--accent">
+          <span>Android app</span>
+        </BaseButton>
         <BaseButton v-if="feature.live_url" link :href="feature.live_url" class="--accent">
-          <span>Open app</span>
+          <span>Web app</span>
         </BaseButton>
         <BaseButton v-if="feature.github_url" link :href="feature.github_url" class="--alt">
           <span>View source</span>
@@ -49,8 +51,9 @@ export default {
       } : ''
     },
     showButtons () {
-      return this.feature.live_url || this.feature.github_url
-    }
+      return this.feature.live_url || this.feature.github_url || this.feature.play_store_url
+    },
+
   },
 }
 </script>
@@ -77,10 +80,21 @@ export default {
 
   &__buttons {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     margin-top: 0 !important;
 
     .base-button {
+      margin-top: 0;
       margin-right: .7em;
+
+      &.--alt {
+        font-size: .7em;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 

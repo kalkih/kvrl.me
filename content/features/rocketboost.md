@@ -15,4 +15,5 @@ description: "Rocketboost is a rocket launch tracking app, get information and s
 dev_description: "Some techonologies used to build Rocketboost includes vue, vuex, nodejs, fastify & mongodb."
 github_url: 'https://github.com/kalkih/rocketboost'
 live_url: 'https://rocket.karls.app'
+play_store_url: 'https://play.google.com/store/apps/details?id=me.kvrl.rocketboost'
 ---

@@ -1,5 +1,5 @@
 <template>
-	<component :is="tag" class="base-button" :href="href || false">
+	<component :is="tag" class="base-button" :href="href || false" target="_blank">
 		<slot></slot>
 	</component>
 </template>
