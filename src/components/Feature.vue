@@ -24,13 +24,13 @@
         <Tags class="feature__tags" :feature="feature" />
       </div>
       <div v-if="showButtons" class="feature__buttons">
-        <BaseButton v-if="feature.play_store_url" link :href="feature.play_store_url" class="--accent">
+        <BaseButton v-if="feature.play_store_url" link :href="feature.play_store_url" rel="noopener" class="--accent">
           <span>Android app</span>
         </BaseButton>
-        <BaseButton v-if="feature.live_url" link :href="feature.live_url" class="--accent">
+        <BaseButton v-if="feature.live_url" link :href="feature.live_url" rel="noopener" class="--accent">
           <span>Web app</span>
         </BaseButton>
-        <BaseButton v-if="feature.github_url" link :href="feature.github_url" class="--alt">
+        <BaseButton v-if="feature.github_url" link :href="feature.github_url" rel="noopener" class="--alt">
           <span>View source</span>
         </BaseButton>
       </div>
