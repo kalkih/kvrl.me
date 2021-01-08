@@ -1,7 +1,9 @@
 <template>
   <div class="feature">
     <div class="feature__images" v-in-viewport.once="{ margin: '-10% 0px' }" :style="rotation">
-      <g-image v-for="(image, index) in feature.feature_images" :key="index"
+      <g-image
+        v-for="(image, index) in feature.feature_images"
+        :key="index"
         :alt="feature.title + '-preview-' + index"
         :src="image"
       />
@@ -9,7 +11,9 @@
     <div class="feature__info">
       <h3 class="feature__title" v-html="feature.title" />
       <div class="feature__thumbs" v-in-viewport.once="{ margin: '-10% 0px' }">
-        <g-image v-for="(image, index) in feature.mobile_images" :key="index"
+        <g-image
+          v-for="(image, index) in feature.mobile_images"
+          :key="index"
           :alt="feature.title + '-mpreview-' + index"
           :src="image"
         />
