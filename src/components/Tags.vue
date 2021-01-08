@@ -16,20 +16,20 @@ export default {
 .tags {
 
   &__link {
-  	margin-right: .7em;
-		font-size: .6em;
+		margin-right: .7em;
+		font-size: .5em;
 		font-weight: 600;
-  	color: currentColor;
-  	text-decoration: none;
-  	padding: .4em 1em;
+		color: currentColor;
+		text-decoration: none;
+		padding: .4em 1em;
 		border-radius: 500px;
 		display: inline-block;
 		position: relative;
 		overflow: hidden;
 		transition: opacity .25s;
 		border: 2px solid var(--link-color);
-		color: var(--link-color);
-		opacity: .75;
+		color: var(--font-color);
+		opacity: .85;
 
 		&:before {
 			content: '';
