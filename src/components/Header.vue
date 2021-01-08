@@ -1,7 +1,7 @@
 <template>
 	<header class="header">
-	  <a class="header__logo" href="/" alt="Navigate home">
-			<Logo />
+	  <a class="header__logo" href="/" aria-label="Navigate home">
+			<Logo alt="Logo" />
 		</a>
 		<Nav/>
 	</header>
