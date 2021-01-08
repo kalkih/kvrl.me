@@ -1,6 +1,6 @@
 <template>
 	<header class="header">
-	  <a class="header__logo" href="/">
+	  <a class="header__logo" href="/" alt="Navigate home">
 			<Logo />
 		</a>
 		<Nav/>
