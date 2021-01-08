@@ -19,7 +19,8 @@ module.exports = {
     },
     {
       "network": "Discord",
-      "handle": "kalkih#9031"
+      "handle": "Karl#9031",
+      "link": "https://discordapp.com/users/392020860212477953"
     }
   ]
 }
