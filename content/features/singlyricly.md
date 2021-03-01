@@ -14,7 +14,8 @@ mobile_images: [
 ]
 rotation: 15
 canonical_url: false
-description: "Singlyricly is a community based app which allow users to see and singalong to real time song lyrics synchronized with their Spotify playback. Real time lyrics are accessible to the user regardless of playback device, play music through Sonos, Chromecast, Spotify Connect or any other client, lyrics will always show up in the Singlyricly app, just connect a Spotify account. Lyrics are sources and synchronized by the community."
+description: "Singlyricly, a lyrics app powered by community sourced lyrics, it provides users with real time song lyrics synchronized with their Spotify playback.
+Singlyricly makes synchronized lyrics accessible regardless of playback device, play music through Sonos, Chromecast, Spotify Connect or any other Spotify client and the lyrics are displayed in the app."
 dev_description: "The app was built with vue & vuex as an progressive web app with a serverless backend in the form of azure-functions and mongodb."
 github_url: 'https://github.com/kalkih/singlyricly'
 live_url: 'https://singlyricly.com'
