@@ -14,6 +14,6 @@ mobile_images: [
 description: "Rocketboost is a rocket launch tracking app, get information, reminders and stay up to date on past and upcoming rocket launches and other space related events."
 dev_description: "Rocketboost was built vue, vuex, nodejs, fastify & mongodb, the app utilize cutting edge web features such as the Push, Notification & Share API, Dynamic themeing & more."
 github_url: 'https://github.com/kalkih/rocketboost'
-live_url: 'https://rocket.karls.app'
+live_url: 'https://rocket.kvrl.me'
 play_store_url: 'https://play.google.com/store/apps/details?id=me.kvrl.rocketboost'
 ---
