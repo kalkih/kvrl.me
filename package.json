@@ -1,5 +1,5 @@
 {
-  "name": "gridsome-starter-blog",
+  "name": "kvrl.me",
   "private": true,
   "scripts": {
     "build": "gridsome build",
