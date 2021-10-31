@@ -12,29 +12,12 @@
   --content-width: 1080px;
   --radius: 5px;
 
-  --bg: #ededed;
-  --bg-code: rgba(0,0,0,.3);
-  --border-color:  rgba(255,255,255,.1);
-  --body-color: #606060;
-  --font-color: rgb(79, 79, 79);
-  --title-color: var(--font-color);
-
-  --link-color: var(--red);
-  --link-color-hover: #9a9a9a;
-  --button-text-color: #fff;
+  @include light-theme;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #14202A;
-    --bg-code: rgba(255,255,255,.3);
-    --border-color:  rgba(0,0,0,.1);
-    --body-color: #e1e0e0;
-    --font-color: #eee;
-    --title-color: var(--font-color);
-    --link-color-hover: #fff;
-    --logo-hover-color: transparent;
-    --button-text-color: var(--font-color);
+    @include dark-theme;
   }
 }
 

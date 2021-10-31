@@ -20,6 +20,14 @@ body {
  	color: var(--body-color);
   line-height: 1.5;
 	height: 100%;
+	transition: background .45s ease;
+
+	&.--light {
+		@include light-theme;
+	}
+	&.--dark {
+		@include dark-theme;
+	}
 
 	&:before {
 		content: '';

@@ -1,0 +1,16 @@
+@mixin dark-theme {
+  --bg: #1f2028;
+  --bg-code: rgba(255, 255, 255, 0.3);
+  --border-color: rgba(0, 0, 0, 0.1);
+  --body-color: #e1e0e0;
+  --font-color: #eee;
+  --font-color-alt: #a9adc1;
+  --title-color: var(--font-color);
+  --link-color-hover: #fff;
+  --logo-hover-color: transparent;
+  --button-text-color: var(--font-color);
+}
+
+%dark-theme {
+  @include dark-theme;
+}

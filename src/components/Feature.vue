@@ -1,6 +1,10 @@
 <template>
   <div class="feature">
-    <div class="feature__images" v-in-viewport.once="{ margin: '-10% 0px' }" :style="rotation">
+    <div
+      class="feature__images"
+      v-in-viewport.once="{ margin: '-10% 0px' }"
+      :style="rotation"
+    >
       <g-image
         v-for="(image, index) in feature.feature_images"
         :key="index"
@@ -20,17 +24,39 @@
       </div>
       <div>
         <p class="feature__desc" v-html="feature.description" />
-        <p v-if="feature.dev_description" class="feature__desc" v-html="feature.dev_description" />
+        <p
+          v-if="feature.dev_description"
+          class="feature__desc"
+          v-html="feature.dev_description"
+        />
         <Tags class="feature__tags" :feature="feature" />
       </div>
       <div v-if="showButtons" class="feature__buttons">
-        <BaseButton v-if="feature.play_store_url" link :href="feature.play_store_url" rel="noopener" class="--accent">
+        <BaseButton
+          v-if="feature.play_store_url"
+          link
+          :href="feature.play_store_url"
+          rel="noopener"
+          class="--accent"
+        >
           <span>Android app</span>
         </BaseButton>
-        <BaseButton v-if="feature.live_url" link :href="feature.live_url" rel="noopener" class="--accent">
+        <BaseButton
+          v-if="feature.live_url"
+          link
+          :href="feature.live_url"
+          rel="noopener"
+          class="--accent"
+        >
           <span>Web app</span>
         </BaseButton>
-        <BaseButton v-if="feature.github_url" link :href="feature.github_url" rel="noopener" class="--alt">
+        <BaseButton
+          v-if="feature.github_url"
+          link
+          :href="feature.github_url"
+          rel="noopener"
+          class="--alt"
+        >
           <span>View source</span>
         </BaseButton>
       </div>
@@ -39,27 +65,32 @@
 </template>
 
 <script>
-import Tags from '@/components/Tags'
-import BaseButton from '@/components/BaseButton'
+import Tags from "@/components/Tags";
+import BaseButton from "@/components/BaseButton";
 
 export default {
   components: {
     Tags,
     BaseButton,
   },
-  props: ['feature'],
+  props: ["feature"],
   computed: {
-    rotation () {
-      return this.feature.rotation ? {
-        'transform': `rotate(${this.feature.rotation}deg)`,
-      } : ''
+    rotation() {
+      return this.feature.rotation
+        ? {
+            transform: `rotate(${this.feature.rotation}deg)`,
+          }
+        : "";
     },
-    showButtons () {
-      return this.feature.live_url || this.feature.github_url || this.feature.play_store_url
+    showButtons() {
+      return (
+        this.feature.live_url ||
+        this.feature.github_url ||
+        this.feature.play_store_url
+      );
     },
-
   },
-}
+};
 </script>
 
 <style lang="scss">
@@ -90,10 +121,10 @@ export default {
 
     .base-button {
       margin-top: 0;
-      margin-right: .7em;
+      margin-right: 0.7em;
 
       &.--alt {
-        font-size: .7em;
+        font-size: 0.7em;
       }
 
       &:last-child {
@@ -139,6 +170,7 @@ export default {
 
       @media screen and (min-width: 650px) {
         margin: 26px 0;
+        margin-top: 2em;
       }
     }
   }
@@ -146,12 +178,14 @@ export default {
   &__title,
   &__more {
     font-weight: 600;
+    margin-bottom: 0;
   }
 
   &__desc {
     font-weight: 500;
     line-height: 1.5em;
-    font-size: .9em;
+    font-size: 0.9em;
+    color: var(--font-color-alt);
   }
 
   &__images,
@@ -160,14 +194,14 @@ export default {
       @for $i from 1 through 4 {
         img:nth-of-type(#{$i}) {
           opacity: 1;
-          transition-delay: #{$i * .15}s;
+          transition-delay: #{$i * 0.15}s;
           transform: translateY(0);
         }
       }
     }
 
     img {
-      transition: transform .75s ease, opacity 1s;
+      transition: transform 0.75s ease, opacity 1s;
       transform: translateY(25%);
       opacity: 0;
     }
