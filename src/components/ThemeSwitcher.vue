@@ -16,9 +16,15 @@
 import Sun from "@/assets/svgs/Sun.svg";
 import Moon from "@/assets/svgs/Moon.svg";
 
-const userPrefersDark = () =>
-  window.matchMedia &&
-  window.matchMedia("(prefers-color-scheme: dark)").matches;
+const userPrefersDark = () => {
+  if (process.isClient) {
+    return (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    );
+  }
+  return false;
+};
 
 const ROTATION_AMOUNT = 180;
 
